@@ -11,6 +11,7 @@ import F from "./themes/F.vue";
 import G from "./themes/G.vue";
 useSlideInit();
 
+// select component based on theme
 const comp = computed(() => {
   switch (theme.value) {
     case "A":

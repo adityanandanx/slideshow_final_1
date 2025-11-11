@@ -7,7 +7,7 @@ import Ordering from "./Ordering.vue";
 
 const query = ref("");
 </script>
-
+<!-- controls defined here -->
 <template>
   <div class="col-12 col-xl-3 col">
     <h2 class="mt-3">Filter by caption</h2>

@@ -1,7 +1,7 @@
 <script setup>
+// Commands defined here
 import { computed, onMounted, ref } from "vue";
 import { mode, theme } from "../store";
-
 const show = ref(false);
 
 const commands = [
@@ -51,6 +51,7 @@ onMounted(() => {
     if (e.key === "Escape") {
       show.value = false;
     }
+    handlekey(e);
   });
 });
 </script>
@@ -62,10 +63,9 @@ onMounted(() => {
         class="form-control"
         type="text"
         v-model="query"
-        placeholder="search"
-        @keydown="handlekey"
+        placeholder="Start typing..."
+        autofocus
       />
-      {{ sel }}
       <ul class="">
         <li
           v-for="(c, i) in fil"
@@ -95,5 +95,13 @@ onMounted(() => {
   border-radius: 2rem;
   padding: 2rem;
   max-width: 500px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
 }
 </style>
