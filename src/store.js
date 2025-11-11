@@ -4,7 +4,7 @@ export const activeImages = ref([]);
 export const allImages = ref([]);
 
 export const mode = ref("auto");
-export const theme = ref("E");
+export const theme = ref("A");
 export const speed = ref("normal"); // slow, normal, fast
 export const index = ref(0);
 export const fav = ref(false);
