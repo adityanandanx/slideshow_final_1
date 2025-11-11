@@ -46,6 +46,12 @@ const toggleFs = () => {
 
 <template>
   <div class="col position-relative" v-if="true" ref="r">
+    <div
+      v-if="activeImages.length === 0"
+      class="text-center h-100 vstack align-items-center justify-content-center"
+    >
+      No images. Please clear filters or upload some images
+    </div>
     <component :is="comp" />
     <button
       class="btn btn-primary position-absolute top-0 end-0"

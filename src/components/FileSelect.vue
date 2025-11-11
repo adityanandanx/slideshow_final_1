@@ -34,7 +34,6 @@ const handleFiles = (files) => {
   }
   activeImages.value = [...allImages.value];
 };
-loadSample();
 </script>
 
 <template>

@@ -54,10 +54,7 @@ img {
 }
 
 .e-enter-active,
-.e-leave-active {
-  transition: transform 500ms ease;
-  z-index: 10;
-}
+.e-leave-active,
 .e-enter-active .left,
 .e-leave-active .right {
   transition: transform 500ms ease;
